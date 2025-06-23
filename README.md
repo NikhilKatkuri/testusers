@@ -55,13 +55,13 @@ These contributors are actively involved in writing, reviewing, and maintaining 
 1️⃣ Clone the repository
 
 ```bash
-git clone https://github.com/your-username/your-repo-name.git
+git clone https://github.com/NikhilKatkuri/testusers.git
 ```
 
 2️⃣ Navigate to the project directory
 
 ```bash
-cd your-repo-name
+cd testusers
 ```
 
 3️⃣ Install dependencies

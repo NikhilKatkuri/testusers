@@ -1,8 +1,28 @@
-const express = require('express');
+const express = require("express");
 const router = express.Router();
 
-
 const studentProfiles = [
+  {
+    rollNo: "24E51A6774",
+    name: "NIKHIL KATKURI",
+    branch: "CSD",
+    gender: "Male",
+    semester: "3",
+    dob: "2006-03-10",
+    religion: "Hindu",
+    collegeEmail: "24E51A6774@hitam.org",
+    password: "hitam@123",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+    // contactNo: "+919xxxxxxxxxx",
+    address: "Hyderabad, Telangana",
+    admissionDate: "2024-08-01",
+    bloodGroup: "unknown",
+    nationality: "Indian",
+  },
   {
     rollNo: "24E51A6701",
     name: "Aryan Sharma",
@@ -13,13 +33,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6701@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543210",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543210",
     address: "Hyderabad, Telangana",
     admissionDate: "2024-08-01",
     fathersName: "Rajesh Sharma",
     mothersName: "Priya Sharma",
     bloodGroup: "A+",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6702",
@@ -31,13 +54,16 @@ const studentProfiles = [
     religion: "Sikh",
     collegeEmail: "24E51A6702@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543211",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543211",
     address: "Secunderabad, Telangana",
     admissionDate: "2024-08-01",
     fathersName: "Sanjay Singh",
     mothersName: "Anita Singh",
     bloodGroup: "B-",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6703",
@@ -49,13 +75,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6703@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543212",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543212",
     address: "Kukatpally, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Vijay Reddy",
     mothersName: "Sarala Reddy",
     bloodGroup: "O+",
-    "nationality": "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6704",
@@ -67,13 +96,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6704@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543213",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543213",
     address: "Gachibowli, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Murali Rao",
     mothersName: "Latha Rao",
     bloodGroup: "AB-",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6705",
@@ -85,13 +117,16 @@ const studentProfiles = [
     religion: "Muslim",
     collegeEmail: "24E51A6705@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543214",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543214",
     address: "Charminar, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Ahmed Khan",
     mothersName: "Fatima Khan",
     bloodGroup: "B+",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6706",
@@ -103,13 +138,16 @@ const studentProfiles = [
     religion: "Muslim",
     collegeEmail: "24E51A6706@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543215",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543215",
     address: "Malakpet, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Ibrahim Begum",
     mothersName: "Zainab Begum",
     bloodGroup: "A-",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6707",
@@ -121,13 +159,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6707@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543216",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543216",
     address: "Jubilee Hills, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Dinesh Saini",
     mothersName: "Ritu Saini",
     bloodGroup: "O-",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6708",
@@ -139,13 +180,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6708@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543217",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543217",
     address: "Banjara Hills, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Ramesh Kumar",
     mothersName: "Shanti Devi",
     bloodGroup: "A+",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6709",
@@ -157,13 +201,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6709@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543218",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543218",
     address: "Nallagandla, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Sunil Verma",
     mothersName: "Seema Verma",
     bloodGroup: "B+",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6710",
@@ -175,13 +222,16 @@ const studentProfiles = [
     religion: "Christian",
     collegeEmail: "24E51A6710@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543219",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543219",
     address: "Madhapur, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Joseph Paul",
     mothersName: "Mary Paul",
     bloodGroup: "AB+",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6711",
@@ -193,13 +243,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6711@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543220",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543220",
     address: "Manikonda, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Gopal Das",
     mothersName: "Radha Devi",
     bloodGroup: "A+",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6712",
@@ -211,13 +264,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6712@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543221",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543221",
     address: "Dilsukhnagar, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Ashok Kumar",
     mothersName: "Poonam Devi",
     bloodGroup: "O+",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6713",
@@ -229,13 +285,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6713@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543222",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543222",
     address: "Kothaguda, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Surendra Kumar",
     mothersName: "Shobha Devi",
     bloodGroup: "B-",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6714",
@@ -247,13 +306,16 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6714@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543223",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543223",
     address: "Miyapur, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Alok Gupta",
     mothersName: "Meena Gupta",
     bloodGroup: "A-",
-    nationality: "Indian"
+    nationality: "Indian",
   },
   {
     rollNo: "24E51A6715",
@@ -265,14 +327,17 @@ const studentProfiles = [
     religion: "Hindu",
     collegeEmail: "24E51A6715@hitam.org",
     password: "hitam@123",
-    contactNo: "+919876543224",
+    photoURL:
+      "https://lh3.googleusercontent.com/a/ACg8ocLHus5rLFEAE-y-1Gd3R4vXbWGf-0spwXZ96dLaHMAbmxqW0pOG=s2002-c-mo",
+
+    // contactNo: "+919876543224",
     address: "LB Nagar, Hyderabad",
     admissionDate: "2024-08-01",
     fathersName: "Ravi Prakash",
     mothersName: "Uma Devi",
     bloodGroup: "O-",
-    nationality: "Indian"
-  }
+    nationality: "Indian",
+  },
 ];
 const facultyProfiles = [
   {
@@ -285,12 +350,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6701@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500001",
+    // contactNo: "+919876500001",
     address: "Hyderabad, Telangana",
     joiningDate: "2005-08-10",
     qualification: "Ph.D. in CSE",
     specialization: "Artificial Intelligence",
-    experienceYears: 20
+    experienceYears: 20,
   },
   {
     employeeId: "20E51A6702",
@@ -302,12 +367,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6702@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500002",
+    // contactNo: "+919876500002",
     address: "Secunderabad, Telangana",
     joiningDate: "2010-07-01",
     qualification: "M.Tech in ECE",
     specialization: "VLSI Design",
-    experienceYears: 15
+    experienceYears: 15,
   },
   {
     employeeId: "20E51A6703",
@@ -319,12 +384,12 @@ const facultyProfiles = [
     religion: "Sikh",
     collegeEmail: "20E51A6703@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500003",
+    // contactNo: "+919876500003",
     address: "Kukatpally, Hyderabad",
     joiningDate: "2015-09-01",
     qualification: "M.E. in Mechanical Engineering",
     specialization: "Thermodynamics",
-    experienceYears: 10
+    experienceYears: 10,
   },
   {
     employeeId: "20E51A6704",
@@ -336,12 +401,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6704@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500004",
+    // contactNo: "+919876500004",
     address: "Gachibowli, Hyderabad",
     joiningDate: "2008-01-15",
     qualification: "Ph.D. in Civil Engineering",
     specialization: "Structural Engineering",
-    experienceYears: 17
+    experienceYears: 17,
   },
   {
     employeeId: "20E51A6705",
@@ -353,12 +418,12 @@ const facultyProfiles = [
     religion: "Muslim",
     collegeEmail: "20E51A6705@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500005",
+    // contactNo: "+919876500005",
     address: "Charminar, Hyderabad",
     joiningDate: "2018-02-20",
     qualification: "M.Tech in IT",
     specialization: "Cyber Security",
-    experienceYears: 7
+    experienceYears: 7,
   },
   {
     employeeId: "20E51A6706",
@@ -370,12 +435,12 @@ const facultyProfiles = [
     religion: "Muslim",
     collegeEmail: "20E51A6706@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500006",
+    // contactNo: "+919876500006",
     address: "Malakpet, Hyderabad",
     joiningDate: "2012-05-10",
     qualification: "Ph.D. in EEE",
     specialization: "Power Systems",
-    experienceYears: 13
+    experienceYears: 13,
   },
   {
     employeeId: "20E51A6707",
@@ -387,12 +452,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6707@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500007",
+    // contactNo: "+919876500007",
     address: "Jubilee Hills, Hyderabad",
     joiningDate: "2003-09-01",
     qualification: "Ph.D. in CSE",
     specialization: "Data Science",
-    experienceYears: 22
+    experienceYears: 22,
   },
   {
     employeeId: "20E51A6708",
@@ -404,12 +469,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6708@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500008",
+    // contactNo: "+919876500008",
     address: "Banjara Hills, Hyderabad",
     joiningDate: "2020-07-15",
     qualification: "M.Tech in ECE",
     specialization: "Embedded Systems",
-    experienceYears: 5
+    experienceYears: 5,
   },
   {
     employeeId: "20E51A6709",
@@ -421,12 +486,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6709@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500009",
+    // contactNo: "+919876500009",
     address: "Nallagandla, Hyderabad",
     joiningDate: "2017-01-20",
     qualification: "M.E. in Mechanical Engineering",
     specialization: "Robotics",
-    experienceYears: 8
+    experienceYears: 8,
   },
   {
     employeeId: "20E51A6710",
@@ -438,12 +503,12 @@ const facultyProfiles = [
     religion: "Christian",
     collegeEmail: "20E51A6710@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500010",
+    // contactNo: "+919876500010",
     address: "Madhapur, Hyderabad",
     joiningDate: "2009-04-01",
     qualification: "Ph.D. in Civil Engineering",
     specialization: "Transportation Engineering",
-    experienceYears: 16
+    experienceYears: 16,
   },
   {
     employeeId: "20E51A6711",
@@ -455,12 +520,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6711@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500011",
+    // contactNo: "+919876500011",
     address: "Manikonda, Hyderabad",
     joiningDate: "2019-08-01",
     qualification: "M.Tech in IT",
     specialization: "Web Development",
-    experienceYears: 6
+    experienceYears: 6,
   },
   {
     employeeId: "20E51A6712",
@@ -472,12 +537,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6712@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500012",
+    // contactNo: "+919876500012",
     address: "Dilsukhnagar, Hyderabad",
     joiningDate: "2000-01-01",
     qualification: "Ph.D. in EEE",
     specialization: "Renewable Energy",
-    experienceYears: 25
+    experienceYears: 25,
   },
   {
     employeeId: "20E51A6713",
@@ -489,12 +554,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6713@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500013",
+    // contactNo: "+919876500013",
     address: "Kothaguda, Hyderabad",
     joiningDate: "2022-02-10",
     qualification: "M.Tech in CSE",
     specialization: "Cloud Computing",
-    experienceYears: 3
+    experienceYears: 3,
   },
   {
     employeeId: "20E51A6714",
@@ -506,12 +571,12 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6714@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500014",
+    // contactNo: "+919876500014",
     address: "Miyapur, Hyderabad",
     joiningDate: "2014-06-01",
     qualification: "Ph.D. in ECE",
     specialization: "Digital Signal Processing",
-    experienceYears: 11
+    experienceYears: 11,
   },
   {
     employeeId: "20E51A6715",
@@ -523,23 +588,22 @@ const facultyProfiles = [
     religion: "Hindu",
     collegeEmail: "20E51A6715@hitam.org", // Corrected email format
     password: "facultyPass123",
-    contactNo: "+919876500015",
+    // contactNo: "+919876500015",
     address: "LB Nagar, Hyderabad",
     joiningDate: "2021-03-01",
     qualification: "M.Tech in Mechanical Engineering",
     specialization: "CAD/CAM",
-    experienceYears: 4
-  }
+    experienceYears: 4,
+  },
 ];
- 
 
-router.post('/login', (req, res) => {
+router.post("/login", (req, res) => {
   const { role, collegeEmail, password } = req.body;
 
   if (!role || !collegeEmail || !password) {
     return res.status(400).json({
       success: false,
-      message: 'Missing role, email, or password.'
+      message: "Missing role, email, or password.",
     });
   }
 
@@ -549,33 +613,37 @@ router.post('/login', (req, res) => {
   let user;
 
   switch (normalizedRole) {
-    case 'student':
+    case "student":
       user = studentProfiles.find(
-        (u) => u.collegeEmail.toLowerCase() === normalizedEmail && u.password === password
+        (u) =>
+          u.collegeEmail.toLowerCase() === normalizedEmail &&
+          u.password === password
       );
       break;
-    case 'faculty':
+    case "faculty":
       user = facultyProfiles.find(
-        (u) => u.collegeEmail.toLowerCase() === normalizedEmail && u.password === password
+        (u) =>
+          u.collegeEmail.toLowerCase() === normalizedEmail &&
+          u.password === password
       );
       break;
     default:
       return res.status(400).json({
         success: false,
-        message: 'Invalid role provided.'
+        message: "Invalid role provided.",
       });
   }
 
   if (user) {
     res.json({
       success: true,
-      message: 'Login successful!',
-      user: { ...user, password: undefined } // Don't send password back
+      message: "Login successful!",
+      user: { ...user, password: undefined }, // Don't send password back
     });
   } else {
     res.status(401).json({
       success: false,
-      message: 'Invalid credentials.'
+      message: "Invalid credentials.",
     });
   }
 });
